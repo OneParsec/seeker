@@ -58,7 +58,9 @@ Along with Location Information we also get **Device Information** without any p
 You can choose a template which will be used by seeker from these : 
 
 * NearYou
+* NearYou RUS (Created by OneParsec)
 * Google Drive (Suggested by @Akaal_no_one)
+* Google Drive RUS (Created by OneParsec)
 * WhatsApp (Suggested by @Dazmed707)
 * Telegram
 
