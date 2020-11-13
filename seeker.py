@@ -87,8 +87,9 @@ def ver_check():
 
 def tunnel_select():
 	if tunnel_mode == None:
-		print(G + '[+]' + C + ' Skipping Serveo, start your own tunnel service manually...' + W + '\n')
+		print(G + '[+]' + C + ' Started NGROK...' + W + '\n')
 	elif tunnel_mode == 'serveo':
+		print(G + '[+]' + C + ' Started SERVEO...' + W + '\n')
 		serveo()
 	else:
 		print(R + '[+]' + C + ' Invalid Tunnel Mode Selected, Check Help [-h, --help]' + W + '\n')
