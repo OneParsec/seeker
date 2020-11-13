@@ -8,8 +8,8 @@ echo '    PHP'
 yes | pacman -S php --needed &>> install.log
 echo '    ssh'
 yes | pacman -S openssh --needed &>> install.log
-echo '    Requests'
-pip3 install requests &>> install.log
+echo '    Python Packages'
+pip3 install -r requirements.txt &>> install.log
 echo
 echo '[!] Setting Permissions...'
 chmod 777 template/nearyou/php/info.txt
