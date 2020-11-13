@@ -1,19 +1,46 @@
-[Sat Aug 24 10:03:14 2019] 127.0.0.1:46454 [200]: /nearyou/index.html
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46460 [200]: /nearyou/
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46464 [200]: /nearyou/css/main.css
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46468 [200]: /nearyou/js/main.js
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46472 [200]: /nearyou/js/location.js
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46476 [200]: /nearyou/js/warpspeed.min.js
-[Sat Aug 24 10:03:27 2019] 127.0.0.1:46480 [200]: /nearyou/js/info.js
-[Sat Aug 24 10:03:28 2019] 127.0.0.1:46484 [200]: /nearyou/
-[Sat Aug 24 10:03:29 2019] 127.0.0.1:46488 [200]: /nearyou/css/main.css
-[Sat Aug 24 10:03:29 2019] 127.0.0.1:46492 [200]: /nearyou/js/main.js
-[Sat Aug 24 10:03:29 2019] 127.0.0.1:46496 [200]: /nearyou/js/location.js
-[Sat Aug 24 10:03:29 2019] 127.0.0.1:46500 [200]: /nearyou/js/info.js
-[Sat Aug 24 10:03:29 2019] 127.0.0.1:46504 [200]: /nearyou/js/warpspeed.min.js
-[Sat Aug 24 10:03:30 2019] 127.0.0.1:46508 [200]: /nearyou/php/info.php
-[Sat Aug 24 10:03:32 2019] 127.0.0.1:46512 [200]: /nearyou/php/result.php
-PHP 7.3.8 Development Server started at Sat Aug 24 10:03:12 2019
-Listening on http://127.0.0.1:8080
-Document root is /home/unknown/tools/seeker/template
-Press Ctrl-C to quit.
+[Fri Nov 13 10:17:28 2020] PHP 7.4.12 Development Server (http://0.0.0.0:8080) started
+[Fri Nov 13 10:17:28 2020] 127.0.0.1:43638 Accepted
+[Fri Nov 13 10:17:28 2020] 127.0.0.1:43638 [200]: (null) /
+[Fri Nov 13 10:17:28 2020] 127.0.0.1:43638 Closing
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43650 Accepted
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43650 [200]: (null) /css/main.css
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43650 Closing
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43662 Accepted
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43660 Accepted
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43666 Accepted
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43668 Accepted
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43662 [200]: (null) /js/main.js
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43660 [200]: (null) /js/info.js
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43666 [200]: (null) /js/location.js
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43662 Closing
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43660 Closing
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43666 Closing
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43668 [200]: (null) /js/warpspeed.min.js
+[Fri Nov 13 10:17:29 2020] 127.0.0.1:43668 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43674 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43674 [200]: (null) /
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43674 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43686 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43690 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43688 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43696 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43698 Accepted
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43690 [200]: (null) /js/location.js
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43696 [200]: (null) /js/warpspeed.min.js
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43686 [200]: (null) /js/info.js
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43690 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43688 [200]: (null) /css/main.css
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43698 [200]: (null) /js/main.js
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43696 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43686 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43688 Closing
+[Fri Nov 13 10:17:30 2020] 127.0.0.1:43698 Closing
+[Fri Nov 13 10:17:31 2020] 127.0.0.1:43700 Accepted
+[Fri Nov 13 10:17:31 2020] 127.0.0.1:43700 [200]: (null) /index.html
+[Fri Nov 13 10:17:31 2020] 127.0.0.1:43700 Closing
+[Fri Nov 13 10:17:32 2020] 127.0.0.1:43706 Accepted
+[Fri Nov 13 10:17:32 2020] 127.0.0.1:43706 [200]: POST /php/info.php
+[Fri Nov 13 10:17:32 2020] 127.0.0.1:43706 Closing
+[Fri Nov 13 10:17:41 2020] 127.0.0.1:43712 Accepted
+[Fri Nov 13 10:17:41 2020] 127.0.0.1:43712 [200]: POST /php/result.php
+[Fri Nov 13 10:17:41 2020] 127.0.0.1:43712 Closing

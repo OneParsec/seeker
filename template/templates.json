@@ -7,11 +7,25 @@
             "import_file": null
         },
         {
+            "name": "NearYou RUS",
+            "dir_name": "nearyou_rus",
+            "module": false,
+            "import_file": null
+        },
+
+        {
             "name": "Google Drive",
             "dir_name": "gdrive",
             "module": true,
             "import_file": "mod_gdrive"
         },
+	{
+            "name": "Google Drive RUS",
+            "dir_name": "gdrive_rus",
+            "module": true,
+            "import_file": "mod_gdrive_rus"
+        },
+
         {
             "name": "WhatsApp",
             "dir_name": "whatsapp",
