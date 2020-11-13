@@ -88,6 +88,15 @@ chmod 777 install.sh
 pacman -S seeker
 ```
 
+### Arch Linux
+
+```bash
+git clone https://github.com/OneParsec/seeker.git
+cd seeker/
+chmod 777 arch_install.sh
+./arch_install.sh
+```
+
 ### Docker
 
 ```bash
