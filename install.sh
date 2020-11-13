@@ -8,9 +8,9 @@ echo '    PHP'
 apt-get -y install php &>> install.log
 echo '    ssh'
 apt-get -y install ssh &>> install.log
-echo '    Requests'
-pip3 install requests &>> install.log
-echo
+echo '    Install Python Packages'
+pip3 install -r requirements.txt &>> install.log
+echo ''
 echo '[!] Setting Permissions...'
 chmod 777 template/nearyou/php/info.txt
 chmod 777 template/nearyou/php/result.txt
