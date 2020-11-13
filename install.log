@@ -1,0 +1,4 @@
+error: you cannot perform this operation unless you are root.
+error: you cannot perform this operation unless you are root.
+error: you cannot perform this operation unless you are root.
+./arch_install.sh: /usr/local/bin/pip3: /usr/local/bin/python3.9: bad interpreter: No such file or directory
