@@ -123,22 +123,21 @@ optional arguments:
   -h, --help                              show this help message and exit
   -s SUBDOMAIN, --subdomain Subdomain 	  Provide Subdomain for Serveo URL ( Optional )
   -k KML, --kml KML                       Provide KML Filename ( Optional )
-  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [manual]
+  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [serveo, manual]
 
 # Example
 
-# SERVEO 
+# NGROK
 ########
 python3 seeker.py
 
-# NGROK ETC.
+# SERVEO ETC.
 ############
 
 # In First Terminal Start seeker in Manual mode like this
-python3 seeker.py -t manual
+python3 seeker.py -t serveo
 
-# In Second Terminal Start Ngrok or any other tunnel service on port 8080
-./ngrok http 8080
+# In Second Terminal Start Serveo or any other tunnel service on port 8080
 
 #-----------------------------------#
 
