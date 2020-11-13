@@ -58,7 +58,9 @@ Along with Location Information we also get **Device Information** without any p
 You can choose a template which will be used by seeker from these : 
 
 * NearYou
+* NearYou RUS (Created by OneParsec)
 * Google Drive (Suggested by @Akaal_no_one)
+* Google Drive RUS (Created by OneParsec)
 * WhatsApp (Suggested by @Dazmed707)
 * Telegram
 
@@ -88,6 +90,15 @@ chmod 777 install.sh
 pacman -S seeker
 ```
 
+### Arch Linux
+
+```bash
+git clone https://github.com/OneParsec/seeker.git
+cd seeker/
+chmod 777 arch_install.sh
+./arch_install.sh
+```
+
 ### Docker
 
 ```bash
@@ -114,22 +125,21 @@ optional arguments:
   -h, --help                              show this help message and exit
   -s SUBDOMAIN, --subdomain Subdomain 	  Provide Subdomain for Serveo URL ( Optional )
   -k KML, --kml KML                       Provide KML Filename ( Optional )
-  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [manual]
+  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [serveo, manual]
 
 # Example
 
-# SERVEO 
+# NGROK
 ########
 python3 seeker.py
 
-# NGROK ETC.
+# SERVEO ETC.
 ############
 
 # In First Terminal Start seeker in Manual mode like this
-python3 seeker.py -t manual
+python3 seeker.py -t serveo
 
-# In Second Terminal Start Ngrok or any other tunnel service on port 8080
-./ngrok http 8080
+# In Second Terminal Start Serveo or any other tunnel service on port 8080
 
 #-----------------------------------#
 
